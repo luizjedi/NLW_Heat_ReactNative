@@ -10,9 +10,15 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
 
+  logOutButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
   logOutText: {
     fontSize: 15,
     fontFamily: FONTS.REGULAR,
     color: COLORS.WHITE,
+    marginRight: 20
   }
 });

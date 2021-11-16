@@ -10,13 +10,15 @@ export function Header() {
         <View style={styles.container}>
             <LogoSvg />
 
-            <UserPhoto imageUri='https://github.com/luizjedi.png'/>
+            <View style={styles.logOutButton}>
+                <TouchableOpacity>
+                    <Text style={styles.logOutText}>
+                        Sair
+                    </Text>
+                </TouchableOpacity>
 
-            <TouchableOpacity>
-                <Text style={styles.logOutText}>
-                    Sair
-                </Text>
-            </TouchableOpacity>
+                <UserPhoto imageUri='https://github.com/luizjedi.png' />
+            </View>
         </View>
     );
 }
