@@ -10,8 +10,8 @@ type User = {
 type AuthContextData = {
     user: User | null;
     isSigningIn: boolean;
-    sigIn(): () => Promise<void>;
-    sigOut(): () => Promise<void>;
+    signIn: () => Promise<void>;
+    signOut: () => Promise<void>;
 
 }
 
@@ -35,8 +35,8 @@ function AuthProvider({ children }: AuthProviderProps) {
 
     return (
         <AuthContext.Provider value={{
-            sigIn,
-            sigOut,
+            signIn,
+            signOut,
             user,
             isSigningIn
         }}
